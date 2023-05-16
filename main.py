@@ -44,8 +44,9 @@ async def mainf(Client,message,):
 
 
 
+async def run_app():
+    print('Running')
+    await app.start()
+    await asyncio.gather(app.idle())
 
-
-
-print('runnig   ')
-app.run()
+asyncio.run(run_app())
